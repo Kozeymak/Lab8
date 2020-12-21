@@ -12,3 +12,19 @@ do{
     }
     number++;
 } while(number<=15);
+
+let board ="";
+let pos= 0;
+while (true){
+    pos++;
+    if(pos>=72){
+        break;
+    }else if(pos%9==0){
+        board+="\n";
+    }else if(pos%2==0){
+        board+="#";
+    }else{
+        board+=" ";
+    }
+}
+console.log(board);

@@ -53,3 +53,15 @@ function sort(a,b,c){
     console.log(result);
 }
 sort(5,2,7);
+
+function max(a,b,c,d,e){
+    mas=[a,b,c,d,e];
+    let max=mas[0];
+    for(let i=1; i<mas.length; i++){
+        if (mas[i]>max){
+            max=mas[i];
+        }
+    }
+    console.log(max);
+}
+max(7,-2,14,3,0);

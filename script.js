@@ -28,3 +28,28 @@ while (true){
     }
 }
 console.log(board);
+
+function sort(a,b,c){
+    mas=[a,b,c];
+    let j;
+    for(let i=0; i<mas.length-1;i++){
+        let min=mas[i];
+        let minpos=i;
+        for(j=i+1; j<mas.length; j++){
+            if (mas[j]<min){
+                min=mas[j];
+                minpos=j;
+            }
+        }
+        let t=mas[i];
+        mas[i]=min;
+        mas[minpos]=t;
+    }
+    result='';
+    for(let i=0; i<mas.length; i++){
+        result+=(mas[i]+', ');
+    }
+    result=result.slice(0,-2);
+    console.log(result);
+}
+sort(5,2,7);
